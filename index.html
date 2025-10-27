@@ -113,7 +113,8 @@
           <option value="python-httpclient">Python + http.client</option>
           <option value="r">R + httr</option>
           <option value="r-httr2">R + httr2</option>
-          <option value="ruby">Ruby</option>
+          <option value="ruby">Ruby + Net::HTTP</option>
+          <option value="ruby-httparty">Ruby + HTTParty</option>
           <option value="rust">Rust</option>
           <option value="swift">Swift</option>
           <option value="wget">Wget</option>
@@ -235,8 +236,12 @@
             <li><a class="dropdown-item" href="/r-httr2/">httr2</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/ruby/">Ruby</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ruby</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/ruby/">Net::HTTP</a></li>
+            <li><a class="dropdown-item" href="/ruby-httparty/">HTTParty</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/rust/">Rust</a>
@@ -341,10 +346,10 @@ response = requests.get('http://example.com')</code></pre>
       <div class="col-sm-6 col-md-4">
         <h3>Similar Tools</h3>
         <ul>
-          <li><a href="https://www.postman.com/">Postman</a>, <a href="https://insomnia.rest/">Insomnia</a> and <a href="https://paw.cloud/">Paw</a></li>
+          <li><a href="https://www.postman.com/">Postman</a>, <a href="https://insomnia.rest/">Insomnia</a>, <a href="https://paw.cloud/">Paw</a> and <a href="https://usebruno.com">Bruno</a></li>
           <li><a href="https://mholt.github.io/curl-to-go/">curl-to-Go</a>, <a href="https://incarnate.github.io/curl-to-php/">-to-PHP</a>, <a href="https://jhawthorn.github.io/curl-to-ruby/">-to-ruby</a></li>
           <li><a href="https://ryan.govost.es/http-translator/">http-translator</a> (to Python and JS)</li>
-          <li>curl's <a href="https://everything.curl.dev/libcurl/libcurl">--libcurl</a> (to C)</li>
+          <li>curl's <a href="https://everything.curl.dev/libcurl/--libcurl.html">--libcurl</a> (to C)</li>
           <li><a href="https://github.com/spulec/uncurl">uncurl</a> (to Python)</li>
           <li><a href="https://github.com/hrbrmstr/curlconverter">hrbrmstr/curlconverter</a> (to R)</li>
           <li><a href="https://github.com/xuchunyang/curl-to-elisp">curl-to-elisp</a></li>
